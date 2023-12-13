@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2bEUS1LHZBBRj7/bSRFv/RyFG4rwK30GQejx1NJadTmMTp6JtJ6K7ytOFF33X1QaNUGWCZW9Aj8GvIJcRGhE6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Homework\\CsvXmlProcessor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Reinis\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

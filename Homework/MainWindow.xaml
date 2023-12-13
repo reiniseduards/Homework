@@ -1,0 +1,30 @@
+﻿<Window x:Class="CsvXmlProcessor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Csv Xml Processor" Height="300" Width="900">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="TxtCsvCheck" Visibility="Hidden" Grid.Row="1" Margin="10, 10, 10, 130">CSV file loaded</TextBlock>
+        <TextBlock Name="TxtXmlCheck" Visibility="Hidden" Grid.Row="1" Margin="10, 30, 10, 110">XML file loaded</TextBlock>
+        <TextBlock Name="TxtError" Foreground="Red" Visibility="Hidden" Grid.Row="1" Margin="10, 50, 10, 90">ERROR: Something wrong</TextBlock>
+
+        <Button Name="BtnOpenCSV" Click="BtnOpenCsv_Click" Margin="30, 10, 30, 10">Open CSV file</Button>
+        <Button Grid.Column="1" Name="BtnOpenXml" Click="BtnOpenXml_Click" Margin="30, 10, 30, 10">Open XML file</Button>
+        <Button Grid.Row="2" Click="BtnExport_Click" Margin="30, 10, 30, 10">Export</Button>
+
+        <TextBlock Name="TxtCsvDirectory" Visibility="Hidden" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">CSV File generated at</TextBlock>
+        <TextBlock Name="TxtLogErrors" Visibility="Hidden" Margin="0, 20, 0, 10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">There were some errors. See log</TextBlock>
+    </Grid>
+</Window>
